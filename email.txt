@@ -1,0 +1,29 @@
+Nome:
+Endereço eletrônico:
+Cargo e/ou profissão (em órgão público, empresa, professor, estudante, etc.):
+
+Atuação Profissional em que utiliza o SINAPI (podem ser indicadas várias opções, se for necessário):
+1) Execução de obras ( )
+2) Licitação de obras ( )
+3) Fiscalização de obras ( )
+4) Orçamentação de obras ( )
+5) Análise de propostas para repasses de recursos ou concessão de financiamentos ( )
+6) Instituição de ensino – professor ou aluno ( )
+7) Representante comercial ( )
+8) TI – desenvolvimento de sistema ou aplicativo ( )
+9) Associações profissionais ou empresariais ( )
+10) Outros (Especificar): 
+
+Utiliza do SINAPI ou acessa www.caixa.gov.br/sinapi para obter (podem ser indicadas várias opções, se for necessário:
+1) Relatórios de preços de insumos ( )
+2) Relatórios de custos de composições de serviços ( )
+3) Catálogo de composições de serviços ( )
+4) Demonstrações de uso do SINAPI ( )
+5) Relatórios de manutenção de insumos, composições ou orçamentos ( )
+6) Fichas de especificação técnica de insumos ( )
+7) Caderno técnico de composições de serviço ( )
+8) Livro de metodologias e conceitos ( )
+9) Livro de cálculos e parâmetros ( )
+10) Sumário de Publicações ( )
+11) Conhecendo o SINAPI ( )
+12) Consulta pública ( )

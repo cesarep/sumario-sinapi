@@ -29,9 +29,14 @@
 
 		<style>
 			:root {
-				--grad-azul: linear-gradient(#006aaa 0%, #4bb1aa 100%);
-				--grad-azul-inv: linear-gradient(#4bb1aa 0%, #006aaa 100%);
-				--grad-laranja: linear-gradient(0deg, #EA5B0B 0%, #F39200 100%);
+				--azul-e: #006aaa;
+				--azul-c: #4bb1aa;
+				--grad-azul: linear-gradient(var(--azul-e) 0%, var(--azul-c) 100%);
+				--grad-azul-inv: linear-gradient(var(--azul-c) 0%, var(--azul-e) 100%);
+				--laranja-e: #EA5B0B;
+				--laranja-c: #F39200;
+				--grad-laranja: linear-gradient(0deg, var(--laranja-e) 0%, var(--laranja-c) 100%);
+				--grad-laranja-inv: linear-gradient(0deg, var(--laranja-c) 0%, var(--laranja-e) 100%);
 			}
 
 			@font-face {
@@ -66,7 +71,7 @@
 				text-align: center;
 				background: #3E99AB;
 				background: var(--grad-azul);
-				border: #006aaa 1px solid;
+				border: var(--azul-e) 1px solid;
 				border-radius: 1em;
 			}
 			.bot:link, .bot:visited, .bot:hover, .bot:active {
@@ -75,7 +80,16 @@
 			}
 			.bot:hover {
 				background: var(--grad-azul-inv);
-				border: #006aaa 1px solid;
+				border: var(--azul-e) 1px solid;
+			}
+
+			.bot.laranja {
+				background: var(--grad-laranja);
+				border: var(--laranja-e) 1px solid;
+			}
+			.bot.laranja:hover {
+				background: var(--grad-laranja-inv);
+				border: var(--laranja-c) 1px solid;
 			}
 
 			table {
@@ -89,7 +103,7 @@
 			}
 			table th {
 				text-align: center;
-				background: #006aaa;
+				background: var(--azul-e);
 				background: var(--grad-laranja);
 				color: white;
 				padding: .25em;
@@ -99,18 +113,18 @@
 			}
 			.primario th {
 				height: 2em;
-				background: #006aaa;
+				background: var(--azul-e);
 				color: white;
 				top: 3em;
 			}
 			.secundario th{
 				height: 2em;
-				background: #4bb1aa;
+				background: var(--azul-c);
 				color: white;
 				top: 5em;
 			}
 			table td {
-				color: #006aaa;
+				color: var(--azul-e);
 				padding: .25em;
 			}
 			table tr:nth-child(odd) td{
@@ -120,6 +134,11 @@
 			  	background-color: #F1F1F1;
 			}
 
+			ul.inline {
+				margin: 0;
+				line-height: 1.5em;
+			}
+			
 			ul.inline li {
 				display: inline;
 				margin-right: 1em;
@@ -132,8 +151,19 @@
 			<h1>Sumário de Publicações</h1>
 			<div class='description'>
 				<p>O Sumário de Publicações foi criado pela equipe do SINAPI com o objetivo de melhorar a acessibilidade de
-					todos os documentos que são publicados e mantidos pela CAIXA.</p>
+					todos os documentos que são publicados e mantidos pela CAIXA.
+				</p>
 			</div>
+			<ul class='inline'>
+				<li><a href="#relatorios-mensais">Relatórios Mensais</a></li>
+				<li><a href="#metodologias-encargos">Metodologias e Encargos</a></li>
+				<li><a href="#correspondencia-nbr15965">Correspondência com a NBR 15.965</a></li>
+				<li><a href="#consulta-publica">Cadernos em Consulta Pública</a></li>
+				<li><a href="#planejamento-atualizacoes">Planejamento de Atualização e Criação de Composições</a></li>
+				<li><a href="#">Cadernos Técnicos</a></li>
+				<li><a href="#">Demonstrações de Uso</a></li>
+				<li><a href="#">Seminários e Palestras</a></li>
+			</ul>
 		</div>
 		<div class='container wp-box'>
 
@@ -224,7 +254,16 @@
 						<li><a href='https://www.caixa.gov.br/Downloads/sinapi-manual-de-metodologias-e-conceitos/Livro1_SINAPI_Metodologias_e_Conceitos_8_Edicao.pdf'>Livro Metodologias e Conceitos</a></li>
 						<li><a href='https://www.caixa.gov.br/Downloads/sinapi-manual-de-metodologias-e-conceitos/Livro2_SINAPI_Calculos_e_Parametros_4_Edicao_Digital.pdf'>Livro Cálculos e Parâmetros (Encargos Vigentes)</a></li>
 						<li><a href='https://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_518'>Histórico de Encargos Complementares</a></li>
+						<li><a href='https://www.caixa.gov.br/Downloads/sinapi-catalogo-de-composicoes-analiticas/CATALOGO_REFERENCIAS_SINAPI.xls'>Catálogo de Referências do SINAPI</a></li>
+						<li><a href='http://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_671'>Manutenção de Composições</a></li>
+						<li><a href='https://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_958'>Ficha de Especificação Técnica de Insumos</a></li>
+						<li><a href='http://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_738'>Manutenção de Insumos</a></li>
 					</ul>
+
+					<a href="mailto:gepad03@caixa.gov.br?subject=Cadastro SINAPI&body=Nome:%0AEndereço eletrônico:%0ACargo e/ou profissão (em órgão público, empresa, professor, estudante, etc.):%0A%0AAtuação Profissional em que utiliza o SINAPI (podem ser indicadas várias opções, se for necessário):%0A1) Execução de obras ()%0A2) Licitação de obras ()%0A3) Fiscalização de obras ()%0A4) Orçamentação de obras ()%0A5) Análise de propostas para repasses de recursos ou concessão de financiamentos ()%0A6) Instituição de ensino – professor ou aluno ()%0A7) Representante comercial ()%0A8) TI – desenvolvimento de sistema ou aplicativo ()%0A9) Associações profissionais ou empresariais ()%0A10) Outros (Especificar):%0A%0AUtiliza do SINAPI ou acessa www.caixa.gov.br/sinapi para obter (podem ser indicadas várias opções, se for necessário:%0A1) Relatórios de preços de insumos ()%0A2) Relatórios de custos de composições de serviços ()%0A3) Catálogo de composições de serviços ()%0A4) Demonstrações de uso do SINAPI ()%0A5) Relatórios de manutenção de insumos, composições ou orçamentos ()%0A6) Fichas de especificação técnica de insumos ()%0A7) Caderno técnico de composições de serviço ()%0A8) Livro de metodologias e conceitos ()%0A9) Livro de cálculos e parâmetros ()%0A10) Sumário de Publicações ()%0A11) Conhecendo o SINAPI ()%0A12) Consulta pública ()%0A%0A">
+						<div class='bot laranja' style='width: 8em; margin: auto'>Cadastro no SINAPI</div>
+					</a>
+
 					<h4 id="correspondencia-nbr15965">Correspondência com a NBR 15.965</h4>
 					<p>
 						O SINAPI tem estudado o sistema de classificação proposto pela ABNT desde 2014.<br>
