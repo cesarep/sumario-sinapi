@@ -1,0 +1,613 @@
+<!DOCTYPE HTML >
+<html lang='pt-br' dir='ltr'>
+    <head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta http-equiv='X-UA-Compatible' content='IE=10' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+
+        <!-- SCRIPTS  -->
+        <script src='https://www.caixa.gov.br/Style Library/js/jquery-3.3.1.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/jquery-migrate-3.0.0.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/jquery-ui.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/bxslider.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/owl.carousel.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/jquery.validate.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/jquery.mask.min.js'></script>
+        <script src='https://www.caixa.gov.br/Style Library/js/cross-selling.js'></script>
+
+		<title>Sumário de Publicações - SINAPI - Caixa</title>
+
+        <link rel='stylesheet' type='text/css' href='https://www.caixa.gov.br/Style Library/css/caixa.css'/>
+		<link rel='stylesheet' type='text/css' href='https://www.caixa.gov.br/Style Library/css/wp.css'/>
+		<link rel='stylesheet' type='text/css' href='https://www.caixa.gov.br/Style Library/css/icons.css'/>
+		<link rel='canonical' href='https://www.caixa.gov.br:443/poder-publico/modernizacao-gestao/sinapi/referencias-precos-insumos/Paginas/default.aspx' />
+
+		<!-- CSS para o portal -->
+		<link rel='shortcut icon' href='https://www.caixa.gov.br/Style Library/images/favicon.ico' type='image/vnd.microsoft.icon' id='favicon' />
+		<link rel='stylesheet' href='https://www.caixa.gov.br/Style Library/css/clean.css' media='all' />
+
+		<style>
+			:root {
+				--grad-azul: linear-gradient(#006aaa 0%, #4bb1aa 100%);
+				--grad-azul-inv: linear-gradient(#4bb1aa 0%, #006aaa 100%);
+				--grad-laranja: linear-gradient(0deg, #EA5B0B 0%, #F39200 100%);
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				margin: 0.5em auto;
+			}
+
+			#estados {
+				position: relative;
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+				/* Pode-se optar por usar o background no CSS ou um elemento de imagem ou SVG na div */
+				/* background: url('mapa-brasil.png'); */
+				background-size: contain;
+			}
+			#estados div {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				width: 2.5em;
+			}
+			#mapa {
+				position: absolute;
+				width: 100%;
+			}
+			.bot {
+				color: white;
+				text-align: center;
+				background: #3E99AB;
+				background: var(--grad-azul);
+				border: #006aaa 1px solid;
+				border-radius: 1em;
+			}
+			.bot:link, .bot:visited, .bot:hover, .bot:active {
+				text-decoration: none;
+				color: white;
+			}
+			.bot:hover {
+				background: var(--grad-azul-inv);
+				border: #006aaa 1px solid;
+			}
+
+			table {
+				text-align: center;
+				border-collapse: collapse;
+				width: 95%;
+				margin: 0 auto;
+			}
+			table, th, td {
+				border: white 1px solid;
+			}
+			table th {
+				text-align: center;
+				background: #006aaa;
+				background: var(--grad-laranja);
+				color: white;
+				padding: .25em;
+				height: 3em;
+				position: sticky;
+				top: 0;
+			}
+			.primario th {
+				height: 2em;
+				background: #006aaa;
+				color: white;
+				top: 3em;
+			}
+			.secundario th{
+				height: 2em;
+				background: #4bb1aa;
+				color: white;
+				top: 5em;
+			}
+			table td {
+				color: #006aaa;
+				padding: .25em;
+			}
+			table tr:nth-child(odd) td{
+				background-color: #D9E0F1;
+			}
+			table tr:nth-child(even) td{
+			  	background-color: #F1F1F1;
+			}
+
+			ul.inline li {
+				display: inline;
+				margin-right: 1em;
+			}
+		</style>
+
+	</head>
+	<body class='wrapper'>
+		<div id='wp015' class='wp-topo container'>
+			<h1>Sumário de Publicações</h1>
+			<div class='description'>
+				<p>O Sumário de Publicações foi criado pela equipe do SINAPI com o objetivo de melhorar a acessibilidade de
+					todos os documentos que são publicados e mantidos pela CAIXA.</p>
+			</div>
+		</div>
+		<div class='container wp-box'>
+
+			<div class='row'>
+
+				<div id='relatorios-mensais' class='colsm-6'>
+					<h4>Relatórios Mensais</h4>
+					<p>Atendendo ao disposto no <a href='http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7983.htm'>Decreto Federal 7.983/2013</a>, a
+					CAIXA disponibiliza mensalmente para cada uma das Unidades da Federação os Relatórios de: Preços de Insumos e Custos de Composições Sintético e Analítico.
+					<br>Em conjunto são também disponibilizados o Relatório de Famílias de Insumos e Catálogo de Referências do SINAPI</p>
+					<div id='estados'>
+						<svg id='mapa' viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<g stroke="#000" stroke-width="1px" fill="none">
+								<path fill="#b3b3b3"
+									d="m267.7 497.4-7.985 2.114 3.572-13.47-55.7-30.94 23.65-24.97 24.47-13.77 2.422-10.58-12.01-9.359 4.897-19.55-14.52-.6632-6.337-21.8-27.34-2.512 3.256-55.88-7.581-18.36-23.52-.1675-6.586-32.26-59.59-28.76.3229-20.95-17.49 1.298-26.88 15.27-24.06-1.695 1.487-20.19-19.72 7.396-16.49-17.79-5.55-18.87 19.18-30.23 29.74-6.009 7.534-37.75-8.53-24.5 11.37-2.11-8.758-4.026.5583-8.066 31.68-4.991 17.18 16.62 34.21-17.41-19.06-27.03 32.44 1.896 32.08-16.75-1.684 38.53 11.75 13.92 49.78-15.41 28.2 3.892 17.29-27.77 20.54 34.15 49.38 37.64 54.16 21.53 21.4-1.974 37.67 26.6 22.62 4.243 8.556 29.86-6.612 22.06-27.06 28.92-17.27 20.81-6.074 60.31-35.51 64.53-43.27 9.499-34.38 20.15-8.408 41.45z" />
+								<path
+									d="m.3677 160.9c.6929 1.079 91.22 35.89 91.22 35.89l43.23-24.49 21.43 9.58 1.11 28.49 22.09-.2424-11.11 35.06" />
+								<path d="m134.5 42.46 19.09 45.28 37.76-20.59-1.318-14.13" />
+								<path d="m191.4 67.12 32.01 32.88-26.62 57.35-.2556 23.68-40.27.8575" />
+								<path d="m196.8 157.4c1.789 2.043 22.37 32.28 22.37 32.28l83.28 5.446-4.615 42.18-32.12 62.8-59.67-4.066" />
+								<path d="m251 376.9 44.07-52.4-28.85-23.78" />
+								<path d="m255.7 416.4 32.63 6.907 23.55 21.28" />
+								<path d="m258.1 405.8 29.81 4.435 11.25-8.106 28.15.6894" />
+								<path d="m329.5 392-23.2-28.55-39.06-5.95" />
+								<path d="m295 324.4 42.67.6498 14.91 37.15 19.74-5.922 3.864 12.84" />
+								<path d="m372.3 356.3 31.15-8.984 5.488-12.32 9.855 6.055" />
+								<path d="m409 335 16.55-36.46 13.78 5.3" />
+								<path
+									d="m425.5 298.6 9.619-23.13s-75.74-21.78-76.08-19.88c-.189 1.048-19.88 20.28-19.88 20.28l-3.525 27.67-34.84 5.087-10.67 11.85" />
+								<path d="m298.3 233.9 56.76.6565 4.02 20.98" />
+								<path d="m355.1 234.5 1.964-32.85-30.92-65.9-24.32 60.22" />
+								<path d="m326.1 135.8c8.758-12.63 29.11-50.3 29.11-50.3" />
+								<path d="m245.4 38.37-.4814 9.057s30.27 41.96 32.09 39.8 28.86-39.36 28.86-39.36" />
+								<path d="m409.4 107-17.56 44.49-28.99 16.5-5.798 33.68 11.68 7.356 48.61-28.07 10.18-25-9.848-49.72" />
+								<path d="m423.7 165.1 26.44 3.476 15.53-38.82" />
+								<path d="m495.6 151.6-20.07 4.844-6.055-8.508-12.63 3.425" />
+								<path d="m499.7 165.7-26.3 7.657-2.246-9.198-20.45 4.007" />
+								<path d="m417.3 181 75.68 6.82" />
+								<path d="m464.8 218.1-9.074-8.93 5.987-8.119-7.709-16.75" />
+								<path d="m456.8 190.3 22.23 12.92" />
+								<path d="m339.2 275.9-13.68-1.073 1.425-8.354 14.56 1.103z" />
+							</g>
+						</svg>
+
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_638'><div class='bot' style='left:  9.0%; top: 36.0%'>AC</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_639'><div class='bot' style='left: 96.0%; top: 42.0%'>AL</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_640'><div class='bot' style='left: 25.0%; top: 24.0%'>AM</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_641'><div class='bot' style='left: 55.0%; top: 10.0%'>AP</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_642'><div class='bot' style='left: 81.0%; top: 44.0%'>BA</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_643'><div class='bot' style='left: 87.0%; top: 24.0%'>CE</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_644'><div class='bot' style='left: 67.0%; top: 49.0%'>DF</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_645'><div class='bot' style='left: 87.0%; top: 63.0%'>ES</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_646'><div class='bot' style='left: 60.0%; top: 55.0%'>GO</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_647'><div class='bot' style='left: 72.0%; top: 23.0%'>MA</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_648'><div class='bot' style='left: 75.0%; top: 60.0%'>MG</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_649'><div class='bot' style='left: 49.0%; top: 64.0%'>MS</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_650'><div class='bot' style='left: 46.0%; top: 46.0%'>MT</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_651'><div class='bot' style='left: 51.0%; top: 25.0%'>PA</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_652'><div class='bot' style='left: 99.5%; top: 28.0%'>PB</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_653'><div class='bot' style='left: 98.0%; top: 35.0%'>PE</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_654'><div class='bot' style='left: 80.0%; top: 33.0%'>PI</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_655'><div class='bot' style='left: 57.0%; top: 76.0%'>PR</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_656'><div class='bot' style='left: 81.0%; top: 71.0%'>RJ</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_657'><div class='bot' style='left: 98.0%; top: 21.0%'>RN</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_658'><div class='bot' style='left: 27.0%; top: 40.0%'>RO</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_659'><div class='bot' style='left: 33.0%; top:  9.0%'>RR</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_660'><div class='bot' style='left: 53.0%; top: 90.0%'>RS</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_662'><div class='bot' style='left: 61.0%; top: 83.0%'>SC</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_663'><div class='bot' style='left: 92.0%; top: 49.0%'>SE</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_664'><div class='bot' style='left: 65.0%; top: 69.0%'>SP</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_661'><div class='bot' style='left: 65.0%; top: 38.0%'>TO</div></a>
+					</div>
+
+					<br>
+
+					<a href='https://www.caixa.gov.br/Downloads/sinapi-errata-relatorios-insumo-e-composicao/Notas_SINAPI.pdf'><div class='bot' style='width: 10em; margin: auto'>Notas Divulgadas</div></a>
+				</div>
+
+				<div id='documentacao-tecnica' class='colsm-6'>
+					<h4 id='metodologias-encargos'>Metodologias e Encargos</h4>
+					<p>
+						As metodologias e conceitos, bem como os cálculos e parâmetros adotados para o desenvolvimento das composições e insumos do SINAPI estão disponíveis em livros. 
+						A leitura destes livros, principalmente o Metodologias e Conceitos, é primordial para a compreensão e uso adequado das referências do SINAPI.<br>
+						Dados revistos com mais frequência são mantidos no livro Cálculos e Parâmetros. Como exemplo, tem-se os encargos sociais e complementares vigentes.
+						O histórico de encargos não mais vigentes também está disponível ao usuário.
+					</p>
+					<ul>
+						<li><a href='https://www.caixa.gov.br/Downloads/sinapi-manual-de-metodologias-e-conceitos/Livro1_SINAPI_Metodologias_e_Conceitos_8_Edicao.pdf'>Livro Metodologias e Conceitos</a></li>
+						<li><a href='https://www.caixa.gov.br/Downloads/sinapi-manual-de-metodologias-e-conceitos/Livro2_SINAPI_Calculos_e_Parametros_4_Edicao_Digital.pdf'>Livro Cálculos e Parâmetros (Encargos Vigentes)</a></li>
+						<li><a href='https://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_518'>Histórico de Encargos Complementares</a></li>
+					</ul>
+					<h4 id="correspondencia-nbr15965">Correspondência com a NBR 15.965</h4>
+					<p>
+						O SINAPI tem estudado o sistema de classificação proposto pela ABNT desde 2014.<br>
+						Com a publicação das partes 4, 5 e 6 da NBR 15.965, a equipe do SINAPI pode concluir o primeiro estudo de correspondência com as referências de Insumos
+						e Composições do SINAPI e propor metodologia de aplicação.<br>
+						Os primeiros insumos, que tiveram sua correspondência realizada, estão divulgados em formato de planilha eletrônica.
+					</p>
+					<ul class='inline'>
+						<li><a href='https://www.caixa.gov.br/Downloads/%E2%80%8Bsinapi-correspondencia-com-a-nbr-15965/Correspondencia_SINAPI_com_NBR_15965_Apresentacao.pdf'>Apresentação</a></li>
+						<li><a href='https://www.caixa.gov.br/Downloads/%E2%80%8Bsinapi-correspondencia-com-a-nbr-15965/Correspondencia_SINAPI_com_NBR_15965_Classificacao.xlsx'>Planilha</a></li>
+						<li><a href='https://www.caixa.gov.br/Downloads/%E2%80%8Bsinapi-correspondencia-com-a-nbr-15965/Correspondencia_SINAPI_com_NBR_15965_Metodologia.pdf'>Metodologia</a></li>
+						<li><a href='https://www.caixa.gov.br/Downloads/%E2%80%8Bsinapi-correspondencia-com-a-nbr-15965/Correspondencia_SINAPI_com_NBR_15965_Conhecendo.pdf'>Conhecendo</a></li>
+					</ul>
+					
+				</div>
+
+			</div>
+
+			<div class='row'>
+
+				<div id='consulta-publica' class='colsm-6'>
+					<h4>Cadernos em Consulta Pública</h4>
+					<table>
+						<tr>
+							<th>Em Consulta</th>
+							<th>Início da Publicação</th>
+							<th>Previsão de Saída</th>
+							<th>Link para 'Caderno'</th>
+							<th>Link para 'Conhecendo'</th>
+						</tr>
+						<tr>
+							<td>Composições Paramétricas - Estrutura de Concreto</td>
+							<td>26/10/2022</td>
+							<td>25/11/2022</td>
+							<td></td>
+							<td>Em Desenvolvimento</td>
+						</tr>
+						<tr>
+							<td>Composições Paramétricas - Estruturas Metálicas</td>
+							<td>26/10/2022</td>
+							<td>25/11/2022</td>
+							<td></td>
+							<td>Em Desenvolvimento</td>
+						</tr>
+						<tr>
+							<td>Composições Paramétricas - Pontos Elétricos</td>
+							<td>26/10/2022</td>
+							<td>25/11/2022</td>
+							<td></td>
+							<td>Em Desenvolvimento</td>
+						</tr>
+						<tr>
+							<td>Eletrodutos, Cabos, Tomadas e Interruptores</td>
+							<td>01/11/2022</td>
+							<td>01/12/2022</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Esgotamento de Valas</td>
+							<td>01/11/2022</td>
+							<td>01/12/2022</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Galerias com Aduelas de Concreto</td>
+							<td>01/11/2022</td>
+							<td>01/12/2022</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Instalação de Água em PEX</td>
+							<td>01/11/2022</td>
+							<td>01/12/2022</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id='planejamento-atualizacoes' class='colsm-6'>
+					<h4>Planejamento de Atualização e Criação de Composições</h4>
+					<table>
+						<tr>
+							<th>Ano</th>
+							<th>Em Atualização</th>
+							<th>Em Criação</th>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>
+								Alvenaria Estrutural – Blocos Cerâmicos<br>
+								Assentamento de Tubos de Esgoto ou Drenagem Pluvial em Concreto<br>
+								Aterro de Valas<br>
+								Cortes e Fixações<br>
+								Drywall<br>
+								Gesso<br>
+								Guias e Sarjetas<br>
+								Massa única / Emboço Interno<br>
+								Pintura Interna<br>
+								Revestimento Cerâmico – Externo<br>
+								Revestimento Cerâmico Interno
+							</td>
+							<td>
+								Produção de Concretos e Argamassas Utilizando RCD<br>
+								Brises<br>
+								Sistemas Hospitalares – Pontos de Consumo<br>
+								Composições Paramétricas – Instalações de Esgoto<br>
+								Composições Paramétricas – Instalações de Água Fria<br>
+								Composições Paramétricas – Instalações de Água Quente<br>
+								Composições Paramétricas – Instalações de Água Pluvial
+							</td>
+						</tr>
+						<tr>
+							<td>2023</td>
+							<td>
+								Demolições e Remoções<br>
+								Dutos de Ar Condicionado<br>
+								Eletrocalhas<br>
+								Execução de Grampo para Solo Grampeado<br>
+								Forros<br>
+								Gabiões – Execução de Muro e Proteção Superficial<br>
+								Impermeabilizações<br>
+								Paisagismo<br>
+								Peneiramento e Ensacamento de Areia<br>
+								Pintura Externa<br>
+								Pré-Moldados<br>
+								Revestimento Decorativo Monocamada<br>
+								Vergas, Contravergas e Fixação de Alvenaria<br>
+								Equipamentos de Proteção Coletiva
+							</td>
+							<td>
+								Estruturas de Madeira<br>
+								Formas Curvas de Madeira para Estrutura de Concreto Armado
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+
+			</div>
+
+			<div id='cadernos-tecnicos' class="row">
+
+				<h4>Cadernos Técnicos</h4>
+
+				<table>
+					<tr>
+						<th>Caderno Técnico</th>
+						<th>Atualizado em</th>
+						<th>Link para "Caderno"</th>
+						<th>Link para "Conhecendo"</th>
+					</tr>
+
+					<tr class="primario">
+						<th colspan=4>SERVIÇOS PRELIMINARES, CANTEIRO DE OBRAS, SEGURANÇA E SAÚDE</th>
+					</tr>
+					<tr>
+						<td>Demolições e Remoções</td>
+						<td>01/2019</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Locação deObras</td>
+						<td>05/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Instalações para canteiros de obras</td>
+						<td>05/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Equipamentos de proteção coletiva</td>
+						<td>07/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr class="primario">
+						<th colspan=4>INFRAESTRUTURA</th>
+					</tr>
+					<tr class="secundario">
+						<th colspan=4>FUNDAÇÕES PROFUNDAS</th>
+					</tr>
+					<tr>
+						<td>Estacas - Armação</td>
+						<td>08/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Arrasamento de Estacas</td>
+						<td>05/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas em Hélice Contínua</td>
+						<td>10/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas Escavadas Sem Fluídos</td>
+						<td>01/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas Pré-Moldadas</td>
+						<td>12/2019</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas Raiz</td>
+						<td>05/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas: Broca, Strauss e Escavada com Fluido</td>
+						<td>10/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estacas Metálicas</td>
+						<td>01/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Tubulões</td>
+						<td>05/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="secundario">
+						<th colspan=4>FUNDAÇÕES RASAS</th>
+					</tr>
+					<tr>
+						<td>Radier, Piso e Laje de Concreto sobre Solo</td>
+						<td>09/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Fundações Rasas (Blocos, Sapatas, Vigas Baldrame)</td>
+						<td>10/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr class="primario">
+						<th colspan=4>SUPERESTRUTURA</th>
+					</tr>
+
+					<tr class="secundario">
+						<th colspan=4>Soldas, Vergas, Contravergas, Cintas, Fôrmas, Escoramentos e Armaduras</th>
+					</tr>
+					<tr>
+						<td>Solda de Topo</td>
+						<td>03/2019</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Vergas, contravergas e fixação de alvenaria</td>
+						<td>12/2017</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Fôrmas para Estruturas de Concreto Armado</td>
+						<td>06/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Fôrmas para pilares circulares</td>
+						<td>03/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Armação para Estruturas de Concreto Armado</td>
+						<td>06/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr class="secundario">
+						<th colspan=4>Concreto preparado em obra e usinado, Lajes e Estruturas Diversas</th>
+					</tr>
+					<tr>
+						<td>Concretagem para Estruturas de Concreto Armado</td>
+						<td>02/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Produção de Concreto</td>
+						<td>05/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Concreto Projetado</td>
+						<td>06/2017</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Lajes pré-moldadas</td>
+						<td>11/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Escadas</td>
+						<td>11/2020</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<tr class="secundario">
+						<th colspan=4>Estruturas Diversas</th>
+					</tr>
+					<tr>
+						<td>Paredes de Concreto - Armação</td>
+						<td>06/2019</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Paredes de Concreto - Concretagem</td>
+						<td>10/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Paredes de Concreto - Estucamento</td>
+						<td>10/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Paredes de Concreto - Fôrmas</td>
+						<td>09/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Grautes e Armação</td>
+						<td>09/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Premoldados</td>
+						<td>05/2018</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Concreto Protendido</td>
+						<td>08/2022</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Estruturas Metálicas</td>
+						<td>05/2021</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
