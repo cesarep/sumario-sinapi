@@ -37,27 +37,6 @@
 				margin: 0.5em auto;
 			}
 
-			#estados {
-				position: relative;
-				width: 400px;
-				height: 400px;
-				margin: 0 auto;
-				/* Pode-se optar por usar o background no CSS ou um elemento de imagem ou SVG na div */
-				/* background: url('mapa-brasil.png'); */
-				background-size: contain;
-			}
-			#estados a {
-				position: absolute;
-				display: block;
-				transform: translate(-50%, -50%);
-				width: 2.5em;
-				height: 1.5em;
-				line-height: 1em;
-			}
-			#mapa {
-				position: absolute;
-				width: 100%;
-			}
 			.bot {
 				color: white;
 				text-align: center;
@@ -65,6 +44,7 @@
 				background: var(--grad-azul);
 				border: var(--azul-e) 1px solid;
 				border-radius: 1em;
+				white-space: nowrap;
 			}
 			a.bot {
 				padding: 5px;
@@ -86,6 +66,29 @@
 			.bot.laranja:hover {
 				background: var(--grad-laranja-inv);
 				border: var(--laranja-c) 1px solid;
+			}
+
+			#estados {
+				position: relative;
+				width: 400px;
+				aspect-ratio: 1;
+				max-width: 100%;
+				margin: 0 auto;
+				/* Pode-se optar por usar o background no CSS ou um elemento de imagem ou SVG na div */
+				/* background: url('mapa-brasil.png'); */
+				background-size: contain;
+			}
+			#estados a {
+				position: absolute;
+				display: block;
+				transform: translate(-50%, -50%);
+				width: 2.5em;
+				height: 1.5em;
+				line-height: 1em;
+			}
+			#mapa {
+				position: absolute;
+				width: 100%;
 			}
 
 			table {
@@ -728,7 +731,7 @@
 
 					<a
 						href="mailto:gepad03@caixa.gov.br?subject=Cadastro SINAPI&body=Nome:%0AEndereço eletrônico:%0ACargo e/ou profissão (em órgão público, empresa, professor, estudante, etc.):%0A%0AAtuação Profissional em que utiliza o SINAPI (podem ser indicadas várias opções, se for necessário):%0A1) Execução de obras ()%0A2) Licitação de obras ()%0A3) Fiscalização de obras ()%0A4) Orçamentação de obras ()%0A5) Análise de propostas para repasses de recursos ou concessão de financiamentos ()%0A6) Instituição de ensino – professor ou aluno ()%0A7) Representante comercial ()%0A8) TI – desenvolvimento de sistema ou aplicativo ()%0A9) Associações profissionais ou empresariais ()%0A10) Outros (Especificar):%0A%0AUtiliza do SINAPI ou acessa www.caixa.gov.br/sinapi para obter (podem ser indicadas várias opções, se for necessário:%0A1) Relatórios de preços de insumos ()%0A2) Relatórios de custos de composições de serviços ()%0A3) Catálogo de composições de serviços ()%0A4) Demonstrações de uso do SINAPI ()%0A5) Relatórios de manutenção de insumos, composições ou orçamentos ()%0A6) Fichas de especificação técnica de insumos ()%0A7) Caderno técnico de composições de serviço ()%0A8) Livro de metodologias e conceitos ()%0A9) Livro de cálculos e parâmetros ()%0A10) Sumário de Publicações ()%0A11) Conhecendo o SINAPI ()%0A12) Consulta pública ()%0A%0A">
-						<div class='bot laranja' style='width: 8em; margin: auto'>Cadastro no SINAPI</div>
+						<div class='bot laranja' style='width: 8em; margin: auto'>Cadastro no<br>SINAPI</div>
 					</a>
 				</div>
 	
