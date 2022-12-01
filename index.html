@@ -57,10 +57,13 @@
 				/* background: url('mapa-brasil.png'); */
 				background-size: contain;
 			}
-			#estados div {
+			#estados a {
 				position: absolute;
+				display: block;
 				transform: translate(-50%, -50%);
 				width: 2.5em;
+				height: 1.5em;
+				line-height: 1em;
 			}
 			#mapa {
 				position: absolute;
@@ -73,6 +76,10 @@
 				background: var(--grad-azul);
 				border: var(--azul-e) 1px solid;
 				border-radius: 1em;
+			}
+			a.bot {
+				padding: 5px;
+				border-radius: 10px;
 			}
 			.bot:link, .bot:visited, .bot:hover, .bot:active {
 				text-decoration: none;
@@ -161,8 +168,9 @@
 				<li><a href="#consulta-publica">Cadernos em Consulta Pública</a></li>
 				<li><a href="#planejamento-atualizacoes">Planejamento de Atualização e Criação de Composições</a></li>
 				<li><a href="#">Cadernos Técnicos</a></li>
-				<li><a href="#">Demonstrações de Uso</a></li>
+				<li><a href="#demonstracoes">Demonstrações de Uso</a></li>
 				<li><a href="#">Seminários e Palestras</a></li>
+				<li><a href="#cadastro-contato">Cadastro e Contatos</a></li>
 			</ul>
 		</div>
 		<div class='container wp-box'>
@@ -208,38 +216,38 @@
 							</g>
 						</svg>
 
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_638'><div class='bot' style='left:  9.0%; top: 36.0%'>AC</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_639'><div class='bot' style='left: 96.0%; top: 42.0%'>AL</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_640'><div class='bot' style='left: 25.0%; top: 24.0%'>AM</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_641'><div class='bot' style='left: 55.0%; top: 10.0%'>AP</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_642'><div class='bot' style='left: 81.0%; top: 44.0%'>BA</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_643'><div class='bot' style='left: 87.0%; top: 24.0%'>CE</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_644'><div class='bot' style='left: 67.0%; top: 49.0%'>DF</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_645'><div class='bot' style='left: 87.0%; top: 63.0%'>ES</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_646'><div class='bot' style='left: 60.0%; top: 55.0%'>GO</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_647'><div class='bot' style='left: 72.0%; top: 23.0%'>MA</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_648'><div class='bot' style='left: 75.0%; top: 60.0%'>MG</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_649'><div class='bot' style='left: 49.0%; top: 64.0%'>MS</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_650'><div class='bot' style='left: 46.0%; top: 46.0%'>MT</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_651'><div class='bot' style='left: 51.0%; top: 25.0%'>PA</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_652'><div class='bot' style='left: 99.5%; top: 28.0%'>PB</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_653'><div class='bot' style='left: 98.0%; top: 35.0%'>PE</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_654'><div class='bot' style='left: 80.0%; top: 33.0%'>PI</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_655'><div class='bot' style='left: 57.0%; top: 76.0%'>PR</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_656'><div class='bot' style='left: 81.0%; top: 71.0%'>RJ</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_657'><div class='bot' style='left: 98.0%; top: 21.0%'>RN</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_658'><div class='bot' style='left: 27.0%; top: 40.0%'>RO</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_659'><div class='bot' style='left: 33.0%; top:  9.0%'>RR</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_660'><div class='bot' style='left: 53.0%; top: 90.0%'>RS</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_662'><div class='bot' style='left: 61.0%; top: 83.0%'>SC</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_663'><div class='bot' style='left: 92.0%; top: 49.0%'>SE</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_664'><div class='bot' style='left: 65.0%; top: 69.0%'>SP</div></a>
-						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_661'><div class='bot' style='left: 65.0%; top: 38.0%'>TO</div></a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_638' class='bot' style='left:  9.0%; top: 36.0%'>AC</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_639' class='bot' style='left: 96.0%; top: 42.0%'>AL</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_640' class='bot' style='left: 25.0%; top: 24.0%'>AM</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_641' class='bot' style='left: 55.0%; top: 10.0%'>AP</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_642' class='bot' style='left: 81.0%; top: 44.0%'>BA</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_643' class='bot' style='left: 87.0%; top: 24.0%'>CE</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_644' class='bot' style='left: 67.0%; top: 49.0%'>DF</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_645' class='bot' style='left: 87.0%; top: 63.0%'>ES</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_646' class='bot' style='left: 60.0%; top: 55.0%'>GO</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_647' class='bot' style='left: 72.0%; top: 23.0%'>MA</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_648' class='bot' style='left: 75.0%; top: 60.0%'>MG</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_649' class='bot' style='left: 49.0%; top: 64.0%'>MS</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_650' class='bot' style='left: 46.0%; top: 46.0%'>MT</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_651' class='bot' style='left: 51.0%; top: 25.0%'>PA</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_652' class='bot' style='left: 99.5%; top: 28.0%'>PB</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_653' class='bot' style='left: 98.0%; top: 35.0%'>PE</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_654' class='bot' style='left: 80.0%; top: 33.0%'>PI</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_655' class='bot' style='left: 57.0%; top: 76.0%'>PR</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_656' class='bot' style='left: 81.0%; top: 71.0%'>RJ</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_657' class='bot' style='left: 98.0%; top: 21.0%'>RN</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_658' class='bot' style='left: 27.0%; top: 40.0%'>RO</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_659' class='bot' style='left: 33.0%; top:  9.0%'>RR</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_660' class='bot' style='left: 53.0%; top: 90.0%'>RS</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_662' class='bot' style='left: 61.0%; top: 83.0%'>SC</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_663' class='bot' style='left: 92.0%; top: 49.0%'>SE</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_664' class='bot' style='left: 65.0%; top: 69.0%'>SP</a>
+						<a href='https://www.caixa.gov.br/site/Paginas/downloads.aspx#categoria_661' class='bot' style='left: 65.0%; top: 38.0%'>TO</a>
 					</div>
 
-					<br>
-
-					<a href='https://www.caixa.gov.br/Downloads/sinapi-errata-relatorios-insumo-e-composicao/Notas_SINAPI.pdf'><div class='bot' style='width: 10em; margin: auto'>Notas Divulgadas</div></a>
+					<p style="text-align: center">
+						<a class='bot' href="https://www.caixa.gov.br/Downloads/sinapi-errata-relatorios-insumo-e-composicao/Notas_SINAPI.pdf">Notas Divulgadas</a>
+					</p>
 				</div>
 
 				<div id='documentacao-tecnica' class='colsm-6'>
@@ -259,10 +267,6 @@
 						<li><a href='https://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_958'>Ficha de Especificação Técnica de Insumos</a></li>
 						<li><a href='http://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_738'>Manutenção de Insumos</a></li>
 					</ul>
-
-					<a href="mailto:gepad03@caixa.gov.br?subject=Cadastro SINAPI&body=Nome:%0AEndereço eletrônico:%0ACargo e/ou profissão (em órgão público, empresa, professor, estudante, etc.):%0A%0AAtuação Profissional em que utiliza o SINAPI (podem ser indicadas várias opções, se for necessário):%0A1) Execução de obras ()%0A2) Licitação de obras ()%0A3) Fiscalização de obras ()%0A4) Orçamentação de obras ()%0A5) Análise de propostas para repasses de recursos ou concessão de financiamentos ()%0A6) Instituição de ensino – professor ou aluno ()%0A7) Representante comercial ()%0A8) TI – desenvolvimento de sistema ou aplicativo ()%0A9) Associações profissionais ou empresariais ()%0A10) Outros (Especificar):%0A%0AUtiliza do SINAPI ou acessa www.caixa.gov.br/sinapi para obter (podem ser indicadas várias opções, se for necessário:%0A1) Relatórios de preços de insumos ()%0A2) Relatórios de custos de composições de serviços ()%0A3) Catálogo de composições de serviços ()%0A4) Demonstrações de uso do SINAPI ()%0A5) Relatórios de manutenção de insumos, composições ou orçamentos ()%0A6) Fichas de especificação técnica de insumos ()%0A7) Caderno técnico de composições de serviço ()%0A8) Livro de metodologias e conceitos ()%0A9) Livro de cálculos e parâmetros ()%0A10) Sumário de Publicações ()%0A11) Conhecendo o SINAPI ()%0A12) Consulta pública ()%0A%0A">
-						<div class='bot laranja' style='width: 8em; margin: auto'>Cadastro no SINAPI</div>
-					</a>
 
 					<h4 id="correspondencia-nbr15965">Correspondência com a NBR 15.965</h4>
 					<p>
@@ -651,7 +655,85 @@
 
 			</div>
 
+			<div class="row">
+
+				<div id="demonstracoes" class="colsm-6">
+					<h4>Demonstrações de Uso</h4>
+					Com o objetivo de exemplificar o uso das referências em insumos e composições, a CAIXA desenvolve
+					e mantém a modelagem de algumas tipologias de edificações e infraestrutura urbana mais recorrentes
+					de projetos submetidos à CAIXA, com uso da tecnologia BIM.<br>
+					Na Ficha Técnica constam informações e ilustrações sobre a modelagem apresentada, em especial a
+					relação dos itens não orçados em função da inexistência de referência para o serviço no SINAPI,
+					da inexistência das características do terreno, e outras relacionadas ao caso concreto.<br>
+					Estes documentos não devem ser adotados como referências de custo e não possuem vínculo com
+					outras atividades da CAIXA
+					<p style="text-align: center">
+						<a class='bot laranja' href="https://www.caixa.gov.br/site/paginas/downloads.aspx#categoria_871"> Manual das Demonstrações</a>
+						<a class='bot laranja' href="https://www.caixa.gov.br/Downloads/sinapi-demostracoes-de-uso-manutencao/FAQ-Demonstracoes-de-Uso.pdf">Perguntas mais Frequentes (FAQ)</a>
+					</p>
+
+					<h6>Habitação</h6>
+					As demonstrações de uso de habitação foram elaboradas considerando tipologias de 
+					edificação mais recorrentes no âmbito da CAIXA. 
+					<ul>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_09664.pdf">
+							9664: Casa térrea 100 m², normal, alvenaria convencional / concreto armado</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_13807.pdf">
+							13807: Bloco c/16 tipo, 1 piloti, 1 subsolo, 7.223 m², normal, alvenaria convencional</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_12077.pdf">
+							12077: Casa térrea 219 m², padrão alto, alvenaria convencional</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_13096.pdf">
+							13096: Bloco 4 pav-tipo sem elevador, 855 m², baixo, alvenaria estrutural</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_13105.pdf">
+							9664: Casa térrea 43 m², baixo, alvenaria convencional</a></li>
+					</ul>
+
+					<h6>Equipamentos Urbanos</h6>
+					As demonstrações de uso de equipamentos urbanos foram elaboradas considerando tipologias
+					de edificação mais recorrentes na CAIXA e contratadas com recursos do OGU. <ul>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_10619.pdf">
+							10619: Centro de referência de Assistência Social, térreo, 165 m²</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_11481.pdf">
+							11481: Unidade Básica de Saúde Padrão 1 - M. Saúde, térreo, 285 m²</a></li>
+						<li><a href="https://www.caixa.gov.br/Downloads/sinapi-demonstracoes-de-uso-fichas-tecnicas/Ficha_Tecnica_13100.pdf">
+							13100: Quadra poliesportiva descoberta 22 x 44 m c/ alambrado metálico</a></li>
+					</ul>
+				</div>
+	
+				<div id="cadastro-contato" class="colsm-6">
+					<h4>Cadastro e Contatos</h4>
+					<p>
+						A Gerência Nacional Padronização e Normas Técnicas de Governo (GEPAD) é na CAIXA a unidade responsável pela manutenção e
+						desenvolvimento do SINAPI.<br>
+						As dúvidas geradas da leitura da documentação técnica ou relatórios do SINAPI podem ser submetidas, por meio de mensagem
+						eletrônica:
+					</p>
+					<p><a class="bot laranja" href="mailto:gepad02@caixa.gov.br">gepad02@caixa.gov.br</a> Quando relacionadas aos preços publicados, à especificação de insumos, às demonstrações de uso e à
+						disponibilização de relatórios;
+					</p>
+					<p><a class="bot laranja" href="mailto:gepad03@caixa.gov.br">gepad03@caixa.gov.br</a> Quando relacionadas às metodologias e aos conceitos adotadas no SINAPI, às composições, aos encargos
+					sociais, aos encargos complementares, à consulta pública e à representação institucional do SINAPI.
+					</p>
+					<p>Se a dúvida estiver relacionada à pesquisa de preço ou à metodologia de coleta, pode ser diretamente enviada ao IBGE
+					<a href="mailto:ibge@ibge.gov.br">(ibge@ibge.gov.br)</a></p>
+
+
+					<p>O cadastro por parte do usuário do SINAPI é sugerido para quem usa as referências do SINAPI com frequência ou
+						tem interesse em conhecer novidades quanto ao desenvolvimento ou manutenção das referências do Sistema.<br>
+						Com o cadastro o usuário passa a receber no seu e-mail as informações do SINAPI, inclusive quanto à publicação
+						de nova referência de preço e custo, além da indicação de eventos para se manter atualizado
+					</p>
+
+					<a
+						href="mailto:gepad03@caixa.gov.br?subject=Cadastro SINAPI&body=Nome:%0AEndereço eletrônico:%0ACargo e/ou profissão (em órgão público, empresa, professor, estudante, etc.):%0A%0AAtuação Profissional em que utiliza o SINAPI (podem ser indicadas várias opções, se for necessário):%0A1) Execução de obras ()%0A2) Licitação de obras ()%0A3) Fiscalização de obras ()%0A4) Orçamentação de obras ()%0A5) Análise de propostas para repasses de recursos ou concessão de financiamentos ()%0A6) Instituição de ensino – professor ou aluno ()%0A7) Representante comercial ()%0A8) TI – desenvolvimento de sistema ou aplicativo ()%0A9) Associações profissionais ou empresariais ()%0A10) Outros (Especificar):%0A%0AUtiliza do SINAPI ou acessa www.caixa.gov.br/sinapi para obter (podem ser indicadas várias opções, se for necessário:%0A1) Relatórios de preços de insumos ()%0A2) Relatórios de custos de composições de serviços ()%0A3) Catálogo de composições de serviços ()%0A4) Demonstrações de uso do SINAPI ()%0A5) Relatórios de manutenção de insumos, composições ou orçamentos ()%0A6) Fichas de especificação técnica de insumos ()%0A7) Caderno técnico de composições de serviço ()%0A8) Livro de metodologias e conceitos ()%0A9) Livro de cálculos e parâmetros ()%0A10) Sumário de Publicações ()%0A11) Conhecendo o SINAPI ()%0A12) Consulta pública ()%0A%0A">
+						<div class='bot laranja' style='width: 8em; margin: auto'>Cadastro no SINAPI</div>
+					</a>
+				</div>
+	
+			</div>
+
 		</div>
+
 
 	</body>
 </html>
