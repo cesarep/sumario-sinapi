@@ -1,0 +1,17 @@
+<svg width="512" height="512" version="1.1" viewBox="0 0 512 512"
+	xmlns="http://www.w3.org/2000/svg">
+	<g fill="none" stroke="#F39200" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+		<path d="m97.98 323v135c0 24.29-19.7 43.99-43.99 43.99-24.29 0-43.99-19.7-43.99-43.99v-329.9h43.99"/>
+		<path d="m53.96 502h404c24.3 0 44-19.7 44-44v-448h-404v223"/>
+		<path d="m53.96 448v-384h44"/>
+		<path d="m453.9 148h-308v-72h308z"/>
+		<path d="m300 388h-154v-192h154z"/>
+		<path d="m348 196h106"/>
+		<path d="m348 244h106"/>
+		<path d="m348 292h106"/>
+		<path d="m348 340h106"/>
+		<path d="m348 388h106"/>
+		<path d="m146 436h307.9"/>
+		<path id="bola" d="m98.43 278v0"/>
+	</g>
+</svg>

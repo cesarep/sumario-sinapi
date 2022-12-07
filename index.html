@@ -14,7 +14,6 @@
 
 		<!-- CSS para o portal -->
 		<link rel='shortcut icon' href='https://www.caixa.gov.br/Style%20Library/images/favicon.ico' type='image/vnd.microsoft.icon' id='favicon' />
-		<link rel='stylesheet' href='https://www.caixa.gov.br/Style%20Library/css/clean.css' media='all' />
 
 		<style>
 			:root {
@@ -26,6 +25,10 @@
 				--laranja-c: #F39200;
 				--grad-laranja: linear-gradient(0deg, var(--laranja-e) 0%, var(--laranja-c) 100%);
 				--grad-laranja-inv: linear-gradient(0deg, var(--laranja-c) 0%, var(--laranja-e) 100%);
+
+				--svg-caderno: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIKCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNGMzkyMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIwIj4KCQk8cGF0aCBkPSJtOTcuOTggMzIzdjEzNWMwIDI0LjI5LTE5LjcgNDMuOTktNDMuOTkgNDMuOTktMjQuMjkgMC00My45OS0xOS43LTQzLjk5LTQzLjk5di0zMjkuOWg0My45OSIvPgoJCTxwYXRoIGQ9Im01My45NiA1MDJoNDA0YzI0LjMgMCA0NC0xOS43IDQ0LTQ0di00NDhoLTQwNHYyMjMiLz4KCQk8cGF0aCBkPSJtNTMuOTYgNDQ4di0zODRoNDQiLz4KCQk8cGF0aCBkPSJtNDUzLjkgMTQ4aC0zMDh2LTcyaDMwOHoiLz4KCQk8cGF0aCBkPSJtMzAwIDM4OGgtMTU0di0xOTJoMTU0eiIvPgoJCTxwYXRoIGQ9Im0zNDggMTk2aDEwNiIvPgoJCTxwYXRoIGQ9Im0zNDggMjQ0aDEwNiIvPgoJCTxwYXRoIGQ9Im0zNDggMjkyaDEwNiIvPgoJCTxwYXRoIGQ9Im0zNDggMzQwaDEwNiIvPgoJCTxwYXRoIGQ9Im0zNDggMzg4aDEwNiIvPgoJCTxwYXRoIGQ9Im0xNDYgNDM2aDMwNy45Ii8+CgkJPHBhdGggaWQ9ImJvbGEiIGQ9Im05OC40MyAyNzh2MCIvPgoJPC9nPgo8L3N2Zz4=');
+				--svg-conhecendo: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM4MCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDY2IDUxMiAzODAiCgl4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjM5MjAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyMCI+CgkJPHBhdGggZD0ibTE0Ni42IDQzNi4xaC0xMDUuMmMtMTcuNDQgMC0zMS41Ny0xNC4xMy0zMS41Ny0zMS41N2wwLjA1LTI1Mi41IDAuMDUtMzYuMjhjMC0yMiAxNy44NC0zOS44NCAzOS44NC0zOS44NGgyODEuMWMyMiAwIDM5Ljg0IDE3Ljg0IDM5Ljg0IDM5Ljg0djM2LjI4bC0wLjEgMjUyLjVjLTdlLTMgMTcuNDQtMTQuMTQgMzEuNTctMzEuNTggMzEuNTdoLTEwNC41Ii8+CgkJPHBhdGggY2xhc3M9IiIgZD0ibTIyNi4xIDI5Mi01Mi45Ni0zMC41OGMtMi44NjQtMS42NTMtNi40NDMgMC40MTMtNi40NDMgMy43MnY2MS4xNmMwIDMuMzA3IDMuNTc5IDUuMzczIDYuNDQzIDMuNzJsNTIuOTYtMzAuNThjMi44NjMtMS42NTMgMi44NjMtNS43ODYgMC03LjQzOXoiLz4KCQk8cGF0aCBjbGFzcz0iIiBkPSJtMjc0LjYgMjk0LjdjMCA0NS45Mi0zNy4yMiA4My4xNC04My4xNCA4My4xNHMtODMuMTQtMzcuMjItODMuMTQtODMuMTQgMzcuMjItODMuMTQgODMuMTQtODMuMTQgODMuMTQgMzcuMjIgODMuMTQgODMuMTR6Ii8+CgkJPHBhdGggY2xhc3M9IiIgZD0ibTkuOTggMTUyIDM4Ny40IDAuMjhjMzIuODcgMC4wMjM4IDU5LjUyIDI2LjY1IDU5LjUyIDU5LjUybDAuMDEgMTQ5Ii8+CgkJPHBhdGggY2xhc3M9IiIgZD0ibTQxMS44IDM0OC45djU0LjY4YzAgMTYuNyAxMy41NCAzMC4yNCAzMC4yNCAzMC4yNGgyOS43NmMxNi43IDAgMzAuMjQtMTMuNTQgMzAuMjQtMzAuMjR2LTU0LjY4cy0xMS45OCAxMS45NC00NS4xMiAxMS45NC00NS4xMi0xMS45NC00NS4xMi0xMS45NCIvPgoJCTxwYXRoIGNsYXNzPSIiIGQ9Im01MDIgMzQ4Ljl2LTkuNzg4YzAtMTYuNy0xMy41NC0zMC4yNC0zMC4yNC0zMC4yNHY4ZS0zaC0yOS43OGMtMTYuNyAwLTMwLjI0IDEzLjU0LTMwLjI0IDMwLjI0djkuNzg4Ii8+CgkJPHBhdGggY2xhc3M9IiIgZD0ibTUyLjg5IDExNC42djAiLz4KCQk8cGF0aCBjbGFzcz0iIiBkPSJtOTIuMDUgMTE0LjZ2MCIvPgoJCTxwYXRoIGNsYXNzPSIiIGQ9Im0xMzEuMiAxMTQuNnYwIi8+CgkJPHBhdGggY2xhc3M9IiIgZD0ibTE5MS40IDQzNi4xdjAiLz4KCTwvZz4KPC9zdmc+');
+
 			}
 
 			@font-face {
@@ -141,6 +144,28 @@
 			ul.inline li {
 				display: inline;
 				margin-right: 1em;
+			}
+
+			a.caderno, a.conhecendo {
+				--altura: 2em;
+				text-align: center;
+				height: var(--altura);
+				display: block;
+			}
+			a.caderno::after, a.conhecendo::after {
+				content: "";
+				display: inline-block;
+				height: var(--altura);
+			}
+			a.caderno::after {
+				background: no-repeat var(--svg-caderno);
+				background-size: contain;
+				aspect-ratio: 1;
+			}
+			a.conhecendo::after {
+				background:  no-repeat var(--svg-conhecendo);
+				background-size: contain;
+				aspect-ratio: 1.4;
 			}
 		</style>
 
@@ -297,50 +322,50 @@
 								<td>Composições Paramétricas - Estrutura de Concreto</td>
 								<td>26/10/2022</td>
 								<td>25/11/2022</td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
 								<td>Em Desenvolvimento</td>
 							</tr>
 							<tr>
 								<td>Composições Paramétricas - Estruturas Metálicas</td>
 								<td>26/10/2022</td>
 								<td>25/11/2022</td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
 								<td>Em Desenvolvimento</td>
 							</tr>
 							<tr>
 								<td>Composições Paramétricas - Pontos Elétricos</td>
 								<td>26/10/2022</td>
 								<td>25/11/2022</td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
 								<td>Em Desenvolvimento</td>
 							</tr>
 							<tr>
 								<td>Eletrodutos, Cabos, Tomadas e Interruptores</td>
 								<td>01/11/2022</td>
 								<td>01/12/2022</td>
-								<td></td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
+								<td><a href="#" class="conhecendo"></a></td>
 							</tr>
 							<tr>
 								<td>Esgotamento de Valas</td>
 								<td>01/11/2022</td>
 								<td>01/12/2022</td>
-								<td></td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
+								<td><a href="#" class="conhecendo"></a></td>
 							</tr>
 							<tr>
 								<td>Galerias com Aduelas de Concreto</td>
 								<td>01/11/2022</td>
 								<td>01/12/2022</td>
-								<td></td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
+								<td><a href="#" class="conhecendo"></a></td>
 							</tr>
 							<tr>
 								<td>Instalação de Água em PEX</td>
 								<td>01/11/2022</td>
 								<td>01/12/2022</td>
-								<td></td>
-								<td></td>
+								<td><a href="#" class="caderno"></a></td>
+								<td><a href="#" class="conhecendo"></a></td>
 							</tr>
 						</tbody>
 					</table>
@@ -432,8 +457,8 @@
 						<tr>
 							<td>Demolições e Remoções</td>
 							<td>01/2019</td>
-							<td></td>
-							<td></td>
+							<td><a class="caderno" href="https://www.caixa.gov.br/Downloads/sinapi-composicoes-aferidas-lote1-habitacao-fundacoes-estruturas/SINAPI_CT_LOTE1_DEMOLICAO_v001.pdf"></a></td>
+							<td><a class="conhecendo" href="https://www.caixa.gov.br/Downloads/sinapi-manual-de-metodologias-e-conceitos/CONHECENDO_CT_DEMOLICOES_REMOCOES_01_2019.pdf"></a></td>
 						</tr>
 						<tr>
 							<td>Locação deObras</td>
